@@ -30,6 +30,7 @@
         {
             txtEmail = new TextBox();
             Email = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // txtEmail
@@ -48,11 +49,21 @@
             Email.TabIndex = 1;
             Email.Text = "Email";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(325, 89);
+            label1.Name = "label1";
+            label1.Size = new Size(105, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Thong tin bo xung";
+            // 
             // AddContactForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(Email);
             Controls.Add(txtEmail);
             Name = "AddContactForm";
@@ -65,5 +76,6 @@
 
         private TextBox txtEmail;
         private Label Email;
+        private Label label1;
     }
 }
